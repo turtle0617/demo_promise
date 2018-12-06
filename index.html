@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./loadImage.js" charset="utf-8" type="module"></script>
+  <script src="./main.js" charset="utf-8" type="module"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <style media="screen">
+    img{
+      margin: 20px;
+    }
+  </style>
+  <script>
+
+    //第1種傳入參數，finalThing最後的值為2
+    // doSomething1().then(doSomething2).then(finalThing)
+    //
+    // //第2種傳入參數，finalThing最後的值為1
+    // doSomething1().then(doSomething2()).then(finalThing)
+    //
+    // //第3種傳入參數，finalThing最後的值為undefined
+    // doSomething1().then(function() {
+    //   doSomething2()
+    // }).then(finalThing)
+    //
+    // //第4種傳入參數，finalThing最後的值為2
+    // doSomething1().then(function() {
+    //   return doSomething2()
+    // }).then(finalThing)
+
+
+
+
+
+    // function doSomething1() {
+    //   console.log('doSomething1 start')
+    //   return new Promise(function(resolve, reject) {
+    //     setTimeout(function() {
+    //       console.log('doSomething1 end')
+    //       resolve(1)
+    //     }, 500)
+    //
+    //   })
+    // }
+    //
+    // function doSomething2() {
+    //   console.log('doSomething2 start')
+    //   return new Promise(function(resolve, reject) {
+    //     setTimeout(function() {
+    //       console.log('doSomething2 end')
+    //       resolve(2)
+    //     }, 500)
+    //
+    //   })
+    // }
+    //
+    // function finalThing(value) {
+    //   console.log('finalThing start')
+    //   return new Promise(function(resolve, reject) {
+    //     setTimeout(function() {
+    //       console.log('finalThing end')
+    //       console.log(value)
+    //       resolve(0)
+    //     }, 500)
+    //
+    //   })
+    // }
+  </script>
+</body>
+
+</html>
