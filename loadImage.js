@@ -1,10 +1,11 @@
+
+
 function loadImagePromise(url) {
   console.log("load",url)
   return new Promise((reslove, reject) => {
     const img = new Image();
 
     img.onload = function() {
-      console.log("success",url)
       reslove(img)
     }
 
